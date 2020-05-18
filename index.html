@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="(min-width: 768px)" href="css/tablet.css">
+  <link rel="stylesheet" media="(min-width: 1024px)" href="css/laptop.css">
+  <link rel="stylesheet" media="(min-width: 1440px)" href="css/desktop.css">
   <title>Filapek&Knobloch</title>
 </head>
 <body>
@@ -12,12 +15,17 @@
     <div class="background-shadow">
       <div class="container">
         <nav>
-          <a href="#" class="">O nas</a>
-          <a href="#" class="">Oferta</a>
-          <a href="#" class="">Formularz kontaktowy</a>
-          <a href="#" class="">Galeria</a>
-          <a href="#" class="">Referencje</a>
-          <a href="#" class="">Opinie</a>
+          <div class="nav-links">
+            <a href="#" class="">O nas</a>
+            <a href="#" class="">Oferta</a>
+            <a href="#" class="">Formularz kontaktowy</a>
+            <a href="#" class="">Galeria</a>
+            <a href="#" class="">Referencje</a>
+            <a href="#" class="">Opinie</a>
+          </div>
+          <button class="btn-mobile-menu">
+            <img src="css/img/menu.svg">
+          </button>
         </nav>   
 
         <section class="landing-page">

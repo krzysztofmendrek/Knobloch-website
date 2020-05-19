@@ -1,0 +1,73 @@
+.container, .copyright-container {
+  width: 71%;
+}
+
+.background {
+  height: 100vh;
+}
+
+.background-shadow {
+  height: 100%;
+}
+
+nav a {
+  transition: 1s;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+}
+
+.btn-contact {
+  transition: 1s;
+}
+
+.btn-contact:hover {
+  transform: scale(1.1);
+}
+
+.about-us, .gallery {
+  height: 700px;
+  padding: 100px 87px 0 87px;
+}
+
+.about-us h1, .gallery h1 {
+  width: 90%;
+  margin: 35px 0;
+}
+
+.offer h1, .promise h1 {
+  margin: 35px 0 70px 0;
+}
+
+.offer {
+  margin: 125px 0;
+}
+
+.box {
+  transition: 2s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.contact-form {
+  padding: 130px 0 80px 0;
+}
+
+form {
+  padding: 50px;
+}
+
+.info__orders {
+  padding: 112px 0 212px 0;
+}
+
+.info__orders h1 {
+  margin-top: 32px;
+}
+
+footer {
+  padding-top: 160px;
+}

@@ -149,15 +149,20 @@ footer {
 
 footer .container {
   display: grid;
-  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
 }
 
-.footer-center-2:nth-child(1n) {
+/* .footer-center-2:nth-child(1n) {
   margin-top: 46px;
+} */
+
+.footer-left-side {
+  text-align: center;
 }
 
 .footer-left-side p {
-  width: 85%;
+  width: 67%;
+  margin: 0 auto;
 }
 
 .footer-center-1 span, .footer-right-side span {

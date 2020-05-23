@@ -20,18 +20,21 @@ a {
   text-decoration: none;
 }
 
-span {
+.short-description {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px; 
+}
+
+
+h1 { 
   color: var(--gray);
   font-weight: 900;
   font-size: 12px;
   line-height: 24px;
-}
-
-h1 {
-  color: var(--dark-blue);
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
 h2 {

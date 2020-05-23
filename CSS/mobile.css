@@ -1,3 +1,8 @@
+.landing-page h1, .contact-form h1 {
+  letter-spacing: initial;
+  text-transform: initial;
+}
+
 .about-us, .gallery {
   position: relative;
   top: -80px;
@@ -5,7 +10,7 @@
   background-color: var(--white);
 }
 
-.about-us h1, .gallery h1 {
+.about-us .short-description, .gallery .short-description {
   margin: 35px 0;
 }
 
@@ -20,17 +25,17 @@
   font-weight: 900;
 }
 
-.footer-left-side, .footer-center-1, /*.footer-center-2,*/ .footer-right-side {
+.footer-left-side, .footer-center-1, .footer-right-side {
   display: grid;
   row-gap: 25px;
 }
 
-.footer-center-1 span, .footer-right-side span {
+.footer-center-1 h2, .footer-right-side h2 {
   margin-top: 50px;
 }
 
-.footer-center-1 a, /*.footer-center-2 a,*/ .footer-center-1 span,
- .footer-right-side span, .footer-right-side a, .footer-right-side address {
+.footer-center-1 a, .footer-center-1 h2,
+ .footer-right-side h2, .footer-right-side a, .footer-right-side address {
   color: var(--gray);
   font-weight: bold;
   font-size: 14px;
@@ -89,18 +94,15 @@ nav a {
   color: var(--white);
   font-size: 56px;
   line-height: 56px;
+  font-weight: 900;
 }
 
 main {
   background-color: var(--light-grey);
 }
 
-.promise h1, .offer h1, .opinion-title h1 {
+.promise .short-description, .offer .short-description, .opinion-title .short-description {
   margin: 35px 0;
-}
-
-.promise .box-wrapper {
-  text-align: center;
 }
 
 .promise-box h2 {
@@ -108,13 +110,13 @@ main {
 }
 
 .offer {
-  margin: 100px 0;
+  margin: 100px 0 200px 0;
 }
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5%;
+  grid-template-columns: 1fr;
+  grid-gap: 1%;
 }
 
 .box {
@@ -144,7 +146,7 @@ main {
 
 .contact-form {
   width: 100%;
-  padding: 90px 0 160px 0;
+  padding: 90px 0 170px 0;
   background-color: var(--dark-blue);
 }
 
@@ -175,12 +177,15 @@ form input {
 form h1 {
   margin-bottom: 22px;
   text-align: center;
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px; 
 }
 
 .form-wrapper {
   display: grid;
-  grid-template-columns: [col1] 1fr [col2] 1fr;
-  grid-row: 2;
+  grid-template-columns: 1fr;
   grid-gap: 22px;
 }
 
@@ -199,20 +204,20 @@ form .btn-contact {
   width: 45%;
 }
 
-.orders-counter {
+.time-promise {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
-.orders-counter h2, .orders-counter span, .orders-counter p {
+.time-promise h2, .time-promise p {
   color: var(--white);
 }
 
-.orders-counter span {
-  margin: 50px 0;
+.time-promise p {
+  margin-bottom: 50px;
   font-weight: 900;
   font-size: 96px;
   line-height: 56px;
@@ -225,49 +230,55 @@ form .btn-contact {
   background-color: var(--white);
 }
 
-.info__orders {
+.realiz-counter {
   position: relative;
   padding: 70px 0 145px 0;
   background-color: var(--dark-blue);
 }
 
-.info__orders--top {
+.realiz-counter__top {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 50px;
 }
 
-.info__orders span {
+.realiz-counter h1 {
   color: var(--alto-grey);
 }
 
-.info__orders h1 {
+.realiz-counter .realiz-counter__top .short-description {
   margin-top: 25px;
   color: var(--white);
 }
 
-.info__orders--bottom {
+.realiz-counter__bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.info__orders--bottom h2 {
+.realiz-counter__bottom p {
   color: var(--yellow);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
 }
 
-.info__orders--bottom p {
+.realiz-counter__bottom h2 {
   margin-bottom: 25px;
   color: var(--light-grey);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
 }
 
 .invitation-to-contact {
   position: absolute;
-  bottom: -75px;
+  bottom: -105px;
   display: flex;
-  height: 100px;
-  width: 90%;
+  width: 90vw;
   padding: 30px 0;
   background-color: var(--white);
 }
@@ -296,14 +307,6 @@ footer {
   grid-template-rows: 6;
 }
 
-/* .footer-center-2 {
-  grid-template-rows: 4;
-}
-
-.footer-center-2:nth-child(1n) {
-  margin-top: 25px;
-} */
-
 .footer-left-side a {
   color: var(--dark-blue);
   font-weight: 900;
@@ -311,7 +314,7 @@ footer {
 }
 
 .footer-left-side img {
-  width: 41%;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -325,7 +328,7 @@ footer {
 
 .copyright {
   display: flex;
-  height: 60px;
+  padding: 10px;
   margin-top: 50px;
   background-color: var(--dark-blue);
 }

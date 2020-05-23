@@ -31,12 +31,12 @@ nav a:hover {
   padding: 100px 87px 0 87px;
 }
 
-.about-us h1, .gallery h1 {
+.about-us .short-description, .gallery .short-description {
   width: 90%;
   margin: 35px 0;
 }
 
-.offer h1, .promise h1 {
+.offer .short-description, .promise .short-description {
   margin: 35px 0 70px 0;
 }
 
@@ -53,19 +53,28 @@ nav a:hover {
 }
 
 .contact-form {
-  padding: 130px 0 80px 0;
+  padding: 110px 0 190px 0;
 }
 
 form {
   padding: 50px;
 }
 
-.info__orders {
+.form-wrapper {
+  grid-template-columns: [col1] 1fr [col2] 1fr;
+  grid-row: 2;
+}
+
+.realiz-counter {
   padding: 112px 0 212px 0;
 }
 
-.info__orders h1 {
+.realiz-counter .short-description {
   margin-top: 32px;
+}
+
+.invitation-to-contact {
+  width: 71vw;
 }
 
 footer {

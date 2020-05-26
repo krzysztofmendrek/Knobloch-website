@@ -1,0 +1,22 @@
+.landing-page__text {
+  height: 40%;
+}
+
+.landing-page h1 {
+  font-size: 46px;
+  line-height: 46px;
+}
+
+.grid-wrapper {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+}
+
+.invitation-to-contact {
+  bottom: -80px;
+}
+
+.footer-left-side img {
+  width: 60%;
+  vertical-align: middle;
+}

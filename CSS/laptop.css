@@ -2,22 +2,6 @@
   width: 71%;
 }
 
-.background {
-  height: 100vh;
-}
-
-.background-shadow {
-  height: 100%;
-}
-
-nav a {
-  transition: 1s;
-}
-
-nav a:hover {
-  transform: scale(1.2);
-}
-
 .btn-contact {
   transition: 1s;
 }
@@ -38,6 +22,22 @@ nav a:hover {
 
 .offer .short-description, .promise .short-description {
   margin: 35px 0 70px 0;
+}
+
+nav {
+  width: 71vw;
+}
+
+nav a {
+  transition: 1s;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+}
+
+.landing-page__text {
+  height: 40%;
 }
 
 .offer {

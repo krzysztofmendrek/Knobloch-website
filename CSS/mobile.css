@@ -1,3 +1,14 @@
+.btn-contact {
+  width: 40%;
+  height: 48px;
+  border: none;
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 900;
+}
+
 .landing-page h1, .contact-form h1 {
   letter-spacing: initial;
   text-transform: initial;
@@ -10,19 +21,24 @@
   background-color: var(--white);
 }
 
-.about-us .short-description, .gallery .short-description {
+.about-us .short-description, .gallery .short-description, .promise .short-description,
+ .offer .short-description, .opinion-title .short-description {
   margin: 35px 0;
 }
 
-.btn-contact {
-  width: 40%;
-  height: 48px;
-  border: none;
-  background-color: var(--yellow);
-  color: var(--dark-blue);
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 900;
+.box h2, .box p {
+  text-align: center;
+}
+
+form input, textarea {
+  border: 0;
+  background-color: var(--light-grey);
+  text-align: center;
+  resize: none;
+}
+
+.time-promise h2, .time-promise p {
+  color: var(--white);
 }
 
 .footer-left-side, .footer-center-1, .footer-right-side {
@@ -47,22 +63,9 @@
   line-height: 20px;
 }
 
-.background {
-  height: 100vh;
-  background-image: url(img/bg.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.background-shadow {
-  position: absolute; 
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0, .5);
-}
-
 nav {
-  width: 105%;
+  position: absolute;
+  width: 90vw;
   margin-top: 5%;
 }
 
@@ -85,24 +88,45 @@ nav a {
   width: 12%;
 }
 
+.background-shadow {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, .5);
+}
+
 .landing-page {
-  margin: 21% 0;
+  height: 100vh;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.landing-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.landing-page__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+  margin: auto 0;
 }
 
 .landing-page h1 {
-  margin-bottom: 48px;
+  width: 75%;
   color: var(--white);
-  font-size: 56px;
-  line-height: 56px;
+  font-size: 36px;
+  line-height: 38px;
   font-weight: 900;
 }
 
 main {
   background-color: var(--light-grey);
-}
-
-.promise .short-description, .offer .short-description, .opinion-title .short-description {
-  margin: 35px 0;
 }
 
 .promise-box h2 {
@@ -140,10 +164,6 @@ main {
   height: 100%;
 }
 
-.box h2, .box p {
-  text-align: center;
-}
-
 .contact-form {
   width: 100%;
   padding: 90px 0 170px 0;
@@ -160,13 +180,6 @@ main {
 form {
   padding: 35px 16px;
   background-color: var(--white);
-}
-
-form input, textarea {
-  border: 0;
-  background-color: var(--light-grey);
-  text-align: center;
-  resize: none;
 }
 
 form input {
@@ -212,10 +225,6 @@ form .btn-contact {
   margin-top: 90px;
 }
 
-.time-promise h2, .time-promise p {
-  color: var(--white);
-}
-
 .time-promise p {
   margin-bottom: 50px;
   font-weight: 900;
@@ -232,7 +241,7 @@ form .btn-contact {
 
 .realiz-counter {
   position: relative;
-  padding: 70px 0 145px 0;
+  padding: 70px 0 200px 0;
   background-color: var(--dark-blue);
 }
 
@@ -276,7 +285,7 @@ form .btn-contact {
 
 .invitation-to-contact {
   position: absolute;
-  bottom: -105px;
+  bottom: -120px;
   display: flex;
   width: 90vw;
   padding: 30px 0;
@@ -285,16 +294,18 @@ form .btn-contact {
 
 .invitation-to-contact .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .invitation-to-contact h2 {
   width: 56%;
+  margin-bottom: 10px;
 }
 
 footer {
-  padding-top: 130px;
+  padding-top: 200px;
   background-color: var(--light-grey);
   text-align: center;
 }

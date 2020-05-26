@@ -2,20 +2,37 @@
   width: 80%;
 }
 
+.about-us, .gallery {
+  height: 500px;
+  padding: 50px;
+}
+
+.about-us .short-description, .gallery .short-description {
+  width: 90%;
+}
+
+.about-us .short-description, .gallery .short-description, .promise .short-description, .offer .short-description {
+  margin: 15px 0 40px 0;
+}
+
+.footer-left-side, .footer-center-1, .footer-right-side {
+  row-gap: 12px;
+}
+
+.footer-center-1 h2, .footer-right-side h2 {
+  margin-top: 0;
+}
+
 .background {
   height: 76vh;
 }
 
-.background-shadow {
-  height: 76%;
-}
-
 nav {
-  position: relative;
+  position: absolute;
   top: 26px;
   display: flex;
   align-items: center; 
-  width: 100%;
+  width: 80vw;
   height: 64px;
   margin-top: 0;
   background-color: var(--white);
@@ -35,21 +52,14 @@ nav {
   width: 30%;
 }
 
+.landing-page__text {
+  height: 45%;
+}
+
 .landing-page h1 {
   width: 65%;
-}
-
-.about-us, .gallery {
-  height: 500px;
-  padding: 50px;
-}
-
-.about-us .short-description, .gallery .short-description {
-  width: 90%;
-}
-
-.about-us .short-description, .gallery .short-description, .promise .short-description, .offer .short-description {
-  margin: 15px 0 40px 0;
+  font-size: 56px;
+  line-height: 56px;
 }
 
 .box-wrapper {
@@ -92,7 +102,6 @@ nav {
   margin-top: 0;
   margin-left: 40px;
 }
-
 
 .opinions {
   display: grid;
@@ -145,6 +154,12 @@ nav {
   width: 80vw;
 }
 
+.invitation-to-contact .container {
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
 footer {
   padding-top: 140px;
   text-align: left;
@@ -153,10 +168,6 @@ footer {
 footer .container {
   display: grid;
   grid-template-columns: 1fr 0.5fr 0.5fr;
-}
-
-.footer-left-side, .footer-center-1, .footer-right-side {
-  row-gap: 12px;
 }
 
 .footer-left-side img {
@@ -171,10 +182,6 @@ footer .container {
 .footer-left-side p {
   width: 67%;
   margin: 0 auto;
-}
-
-.footer-center-1 h2, .footer-right-side h2 {
-  margin-top: 0;
 }
 
 .copyright {

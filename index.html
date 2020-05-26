@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" media="(min-width: 500px)" href="css/mini-tablet.css">
   <link rel="stylesheet" media="(min-width: 768px)" href="css/tablet.css">
   <link rel="stylesheet" media="(min-width: 1024px)" href="css/laptop.css">
   <link rel="stylesheet" media="(min-width: 1440px)" href="css/desktop.css">
@@ -12,37 +13,37 @@
   <title>Filapek&Knobloch</title>
 </head>
 <body>
+  <div class="container">
+    <nav>
+      <div class="nav-links">
+        <a href="#about-us">O nas</a>
+        <a href="#offer">Oferta</a>
+        <a href="#contact-form">Formularz kontaktowy</a>
+        <a href="#">
+          <img src="css/img/logo.svg" alt="logo">
+        </a>
+        <a href="#gallery">Galeria</a>
+        <a href="#opinions">Opinie</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <button class="btn-mobile-menu">
+        <img src="css/img/menu.svg">
+      </button>
+    </nav>   
+  </div>
 
-  <div class="background">
+  <section class="landing-page">
     <div class="background-shadow">
       <div class="container">
-        <nav>
-          <div class="nav-links">
-            <a href="#about-us">O nas</a>
-            <a href="#offer">Oferta</a>
-            <a href="#contact-form">Formularz kontaktowy</a>
-            <a href="#">
-              <img src="css/img/logo.svg" alt="logo">
-            </a>
-            <a href="#gallery">Galeria</a>
-            <a href="#opinions">Opinie</a>
-            <a href="#contact">Kontakt</a>
-          </div>
-          <button class="btn-mobile-menu">
-            <img src="css/img/menu.svg">
-          </button>
-        </nav>   
-
-        <section class="landing-page">
+        <div class="landing-page__text">
           <h1>
             Usługi najwyższej jakości to nasz główny motyw
           </h1>
           <button class="btn-contact">Dokonaj wyceny</button>
-        </section>
+        </div>
       </div>
     </div>
-  </div>
-
+  </section>
   <main>
     <div class="container">
       <section id="about-us" class="about-us">
@@ -186,6 +187,7 @@
         <div class="opinion"></div>
       </section>
     </div>
+
     <section class="realiz-counter">
       <div class="container">
         <div class="realiz-counter__top">
@@ -237,6 +239,7 @@
       </div>
     </section>
   </main>
+  
   <footer id="contact">
     <div class="container">
       <div class="footer-left-side">
@@ -259,12 +262,6 @@
         <a href="#gallery">Galeria</a>
         <a href="#opinions">Opinie</a>
       </div>
-      <!-- <div class="footer-center-2">
-        <a href="#">Reviews</a>
-        <a href="#">Shop</a>
-        <a href="#">Careers</a>
-        <a href="#">FAQs</a>
-      </div> -->
       <div class="footer-right-side">
         <h2>CONTACT</h2>
         <address>Rudzica WEST COAST</address>

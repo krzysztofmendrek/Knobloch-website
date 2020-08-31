@@ -28,12 +28,12 @@ nav {
   width: 71vw;
 }
 
-nav a {
-  transition: 1s;
+.nav-links-logo {
+  text-align: center;
 }
 
-nav a:hover {
-  transform: scale(1.2);
+.nav-links-logo img {
+  width: 35%;
 }
 
 .landing-page__text {
@@ -79,4 +79,8 @@ form {
 
 footer {
   padding-top: 160px;
+}
+
+.footer-left-side img {
+  width: 50%;
 }

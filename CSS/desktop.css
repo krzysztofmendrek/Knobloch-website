@@ -15,6 +15,10 @@ form {
   padding: 130px 0 210px 0;
 }
 
+.footer-left-side img {
+  width: 40%;
+}
+
 .copyright-right-side {
   width: 22%;
 }

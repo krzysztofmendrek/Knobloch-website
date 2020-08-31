@@ -35,12 +35,13 @@ nav {
   width: 80vw;
   height: 64px;
   margin-top: 0;
-  background-color: var(--white);
+  background-color: rgb(255,255,255, 0.8);
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
